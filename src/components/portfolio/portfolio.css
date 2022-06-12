@@ -1,0 +1,66 @@
+.container.portfolio__container{
+    width: 45%;
+    padding-bottom: 4rem;
+    border: 1px solid transparent;
+}
+
+.portfolio:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    transition: var(--transition);
+
+}
+
+.portfolio__pic{
+    width:25rem;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+   
+}
+
+.portfolio{
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+    border:1px solid transparent;
+}
+
+.portfolio__description{
+    color: var(--color-light);
+    font-weight:300;
+    display:block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: var(--color-white);
+}
+
+
+/*==================Media Queries (medium devices) ============== */
+
+@media screen and (max-width: 1024px){
+    .container.portfolio__container{
+        width:60%;
+    }
+    
+}
+
+/*==================Media Queries (small devices) ============== */
+
+@media screen and (max-width: 600px){
+    .container.portfolio__container {
+        width: var(--container-width-sm);
+    }
+
+    .portfolio__pic{
+        width: var(--container-width-sm);
+    }
+
+    .portfolio__description{
+        width: var(--container-width-sm);
+    }
+}
